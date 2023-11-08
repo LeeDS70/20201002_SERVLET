@@ -11,15 +11,14 @@
         </div>
     </div>
     <div>
-        <img src = "image\logo_coupang_w350.png" class = "img-fluid" alt = "main_image">
+        <img src = "..\image\logo_coupang_w350.png" class = "img-fluid" alt = "main_image">
     </div>
     <div class = "container" style = "margin:0px">
         <div class = "navbar-header">
-            <a class = "navbar-brand" href = "./index.jsp">홈페이지</a>
-            <a class = "navbar-brand" href = "./index.jsp">로그인</a>
-            <a class = "navbar-brand" href = "./index.jsp">회원가입</a>
-            <a class = "navbar-brand" href = "./index.jsp">고객센터</a>
-            <a class = "navbar-brand" href = "admin/index_ad.jsp">관리자모드</a>
+            <a class = "navbar-brand" href = "./index_ad.jsp">홈페이지</a>
+            <a class = "navbar-brand" href = "./index_ad.jsp">로그인</a>
+            <a class = "navbar-brand" href = "./index_ad.jsp">회원가입</a>
+            <a class = "navbar-brand" href = "./index_ad.jsp">고객센터</a>
         </div>
     </div>
 </nav>

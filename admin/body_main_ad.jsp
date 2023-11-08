@@ -23,7 +23,7 @@
         %>
         <div class = "col-md-4">
             <div class = "card bg-dark text-primary">
-                <img src = "image/product/<%=product.getProductId()%>.png" class = "card-img" alt = "...">
+                <img src = "../image/product/<%=product.getProductId()%>.png" class = "card-img" alt = "...">
                 <div class = "card-img-overlay">
                     <h5 class = "card-title">샘플 이미지</h5>
                     <p class = "card-text">출처:""</p>
@@ -32,7 +32,7 @@
             <h3><%=product.getPname()%></h3>
             <p><%=product.getDescription()%></p>
             <p><%=product.getUnitPrice()%>원</p>
-            <p><a href = "product_detail.jsp?id=<%=product.getProductId()%>" class = "btn btn-secondary" role = "button">상품 상세 정보</a></p>
+            <p><a href = "product_detail_ad.jsp?id=<%=product.getProductId()%>" class = "btn btn-secondary" role = "button">상품 상세 정보</a></p>
         </div>
         <%
             }
@@ -40,7 +40,7 @@
     </div>
 </div>
 <div class = "card bg-dark text-white">
-    <img src = "image/danawa_event.jpg" class = "card-img" alt = "...">
+    <img src = "../image/danawa_event.jpg" class = "card-img" alt = "...">
     <div class = "card-img-overlay">
         <h5 class = "card-title">스타필드 전격 출시</h5>
         <p class = "card-text">출처 : 다나와</p>
