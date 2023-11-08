@@ -14,6 +14,8 @@ public class Product implements Serializable { // 인터페이스 선언
     private long unitsInStock;   // 재고 수
     private String condition;    // 신상, 중고, 재생품
     
+    private String filename;
+    
     public Product(){
         super();
     }
@@ -87,4 +89,12 @@ public class Product implements Serializable { // 인터페이스 선언
 	public void setCondition(String condition) {
 		this.condition = condition;
 	}
+    
+    public void setFilename(String filename){
+        this.filename = filename;
+    }
+    
+    public String getFilename(){
+        return filename;
+    }
 }

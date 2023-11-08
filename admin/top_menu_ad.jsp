@@ -16,9 +16,11 @@
     <div class = "container" style = "margin:0px">
         <div class = "navbar-header">
             <a class = "navbar-brand" href = "./index_ad.jsp">홈페이지</a>
-            <a class = "navbar-brand" href = "./index_ad.jsp">로그인</a>
-            <a class = "navbar-brand" href = "./index_ad.jsp">회원가입</a>
-            <a class = "navbar-brand" href = "./index_ad.jsp">고객센터</a>
+            <a class = "navbar-brand" href = "./index_ad.jsp">회원 보기/수정/삭제</a>
+            <a class = "navbar-brand" href = "./index_ad.jsp">상품 보기</a>
+            <a class = "navbar-brand" href = "product_add.jsp">등록</a>
+            <a class = "navbar-brand" href = "./index_ad.jsp">수정/삭제</a>
+            <a class = "navbar-brand" href = "../index.jsp">일반모드</a>
         </div>
     </div>
 </nav>

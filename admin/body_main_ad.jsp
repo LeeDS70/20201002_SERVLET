@@ -1,6 +1,7 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
 <%@ page import = "java.util.ArrayList" %>
 <%@ page import = "dto.Product" %>
+<%@ page import = "dao.ProductRepository" %>
 <jsp:useBean id = "productDAO" class = "dao.ProductRepository" scope = "session" />
 
 <%! String greeting = "쿠팡에 오신 것을 환영합니다.";
@@ -13,7 +14,8 @@
     </div>
 </div>
     <%
-        ArrayList<Product> listOfProducts = productDAO.getAllProducts(); // 리스트에 상품 전체 정보를 얻어온다.
+        ProductRepository dao = ProductRepository.getInstance();
+        ArrayList<Product> listOfProducts = dao.getAllProducts(); // 리스트에 상품 전체 정보를 얻어온다.
     %>
 <div class = "container">
     <div class = "row" align = "center">
@@ -23,7 +25,7 @@
         %>
         <div class = "col-md-4">
             <div class = "card bg-dark text-primary">
-                <img src = "../image/product/<%=product.getProductId()%>.png" class = "card-img" alt = "...">
+                <img src = "../image/product/<%=product.getFilename()%>" class = "card-img" alt = "...">
                 <div class = "card-img-overlay">
                     <h5 class = "card-title">샘플 이미지</h5>
                     <p class = "card-text">출처:""</p>
@@ -32,7 +34,7 @@
             <h3><%=product.getPname()%></h3>
             <p><%=product.getDescription()%></p>
             <p><%=product.getUnitPrice()%>원</p>
-            <p><a href = "product_detail_ad.jsp?id=<%=product.getProductId()%>" class = "btn btn-secondary" role = "button">상품 상세 정보</a></p>
+            <p><a href = "product_detail_ad.jsp?id=<%=product.getProductId()%>" class = "btn btn-secondary" role = "button">상품 상세 정보 &raquo;</a></p>
         </div>
         <%
             }
