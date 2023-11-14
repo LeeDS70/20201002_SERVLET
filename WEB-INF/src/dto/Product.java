@@ -13,8 +13,8 @@ public class Product implements Serializable { // 인터페이스 선언
     private String category;     // 분류
     private long unitsInStock;   // 재고 수
     private String condition;    // 신상, 중고, 재생품
-    
-    private String filename;
+    private String filename;     // 이미지 파일명
+    private Integer quantity;
     
     public Product(){
         super();
@@ -96,5 +96,13 @@ public class Product implements Serializable { // 인터페이스 선언
     
     public String getFilename(){
         return filename;
+    }
+    
+    public int getQuantity(){
+        return quantity;
+    }
+    
+    public void setQuantity(int quantity){
+        this.quantity = quantity;
     }
 }
