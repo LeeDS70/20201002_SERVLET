@@ -8,7 +8,7 @@
     Cookie shippingDate = new Cookie("Shipping_shippingDate", URLEncoder.encode(request.getParameter("shippingDate"), "utf-8"));
     Cookie country = new Cookie("Shipping_country", URLEncoder.encode(request.getParameter("country"), "utf-8"));
     Cookie zipCode = new Cookie("Shipping_zipCode", URLEncoder.encode(request.getParameter("zipCode"), "utf-8"));
-    Cookie addressName = new Cookie("Shipping_addressName", URLEncoder.encode(request.getParameter("addressName"), "utf-8"));
+    Cookie addressName = new Cookie("Shipping_addressName", URLEncoder.encode(request.getParameter("addressName1") + ", " + request.getParameter("addressName2") + request.getParameter("addressName3"), "utf-8"));
 
     cartId.setMaxAge(24 * 60 * 60); // 초 단위
     name.setMaxAge(24 * 60 * 60);

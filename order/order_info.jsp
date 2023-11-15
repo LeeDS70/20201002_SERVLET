@@ -52,16 +52,16 @@
                 <div class = "form-group row">
                     <label class = "col-sm-2">우편번호</label>
                     <div class = "col-sm-3">
-                        <input type="text" name="sample6_postcode" placeholder="우편번호">
+                        <input type="text" name = "zipCode" id="sample6_postcode" placeholder="우편번호">
                         <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
                     </div>
                 </div>
                 <div class = "form-group row">
                     <label class = "col-sm-2">주소</label>
                     <div class = "col-sm-5">
-                        <input type="text" id="sample6_address" placeholder="주소"><br>
-                        <input type="text" id="sample6_detailAddress" placeholder="상세주소">
-                        <input type="text" id="sample6_extraAddress" placeholder="참고항목">
+                        <input type="text" name = "addressName1" id="sample6_address" placeholder="주소"><br>
+                        <input type="text" name = "addressName2" id="sample6_detailAddress" placeholder="상세주소">
+                        <input type="text" name = "addressName3" id="sample6_extraAddress" placeholder="참고항목">
                     </div>
                 </div>
                 <div class = "form-group row">
