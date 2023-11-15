@@ -43,10 +43,10 @@
                 <div class = "form-group row">
                     <label class = "col-sm-2">국가명</label>
                     <select name = "country" type = "text" class = "col-sm-3">
-                        <option value = "한국">한국</option>
-                        <option value = "미국">미국</option>
-                        <option value = "일본">일본</option>
-                        <option value = "중국">중국</option>
+                        <option value = " 한국">한국</option>
+                        <option value = " 미국">미국</option>
+                        <option value = " 일본">일본</option>
+                        <option value = " 중국">중국</option>
                     </select>
                 </div>
                 <div class = "form-group row">

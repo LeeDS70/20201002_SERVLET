@@ -1,4 +1,4 @@
-<%@ page contentType = "text/html;charset=utf-8" %>
+    <%@ page contentType = "text/html;charset=utf-8" %>
 <%@ page import = "java.util.ArrayList" %>
 <%@ page import = "dto.Product" %>
 <%@ page import = "dao.ProductRepository" %>
@@ -19,12 +19,13 @@
 
     ArrayList<Product> cartList = (ArrayList<Product>) session.getAttribute("cartlist");
     Product goodsQnt = new Product();
-    for (int i = 0; i < cartList.size(); i++){
-        goodsQnt = cartList.get(i);
-        if(goodsQnt.getProductId.equals(id)){
-            cartList.remove(goodsQnt);
+    if(cartList != null){
+        for (int i = 0; i < cartList.size(); i++){
+            goodsQnt = cartList.get(i);
+            if(goodsQnt.getProductId().equals(id)){
+                cartList.remove(goodsQnt);
+            }
         }
     }
-
     response.sendRedirect("product_cart.jsp");
 %>
