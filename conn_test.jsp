@@ -28,7 +28,16 @@
                     out.write("| ");
                     out.println(rs.getString("p_description"));
                     out.write("| ");
+                    out.println(rs.getString("p_category"));
+                    out.write("| ");
                     out.println(rs.getString("p_manufacturer"));
+                    out.write("| ");
+                    out.println(rs.getString("p_unitsInStock"));
+                    out.write("| ");
+                    out.println(rs.getString("p_condition"));
+                    out.write("| ");
+                    out.println(rs.getString("p_fileName"));
+                    out.write("| ");
                     out.write("<br><br>");
                 }
                 rs.close();
