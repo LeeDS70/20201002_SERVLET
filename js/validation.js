@@ -47,5 +47,5 @@ function CheckAddProduct(){
         return false;
     }
     
-    document.newProductsubmit()
+    document.newProduct.submit()
 }

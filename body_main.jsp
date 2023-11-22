@@ -1,9 +1,9 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
 <%@ page import = "java.util.ArrayList" %>
 <%@ page import = "dto.Product" %>
+<%@ page import = "dao.ProductRepository" %>
 <%@ page import = "java.sql.*" %>
 <%@ include file = "db/db_conn.jsp" %>
-<jsp:useBean id = "productDAO" class = "dao.ProductRepository" scope = "session" />
 
 <%! String greeting = "쿠팡에 오신 것을 환영합니다.";
     String tagline = "웹 마켓에 오신 것을 환영합니다."; %>
@@ -25,7 +25,7 @@
             String sql = "select * from product"; // 조회
             pstmt = conn.prepareStatement(sql); // 연결 생성
             rs = pstmt.executeQuery(); // 쿼리 실행
-            while(rs.next()) { // 결과 ResultSet 객체 반복
+            while (rs.next()) { // 결과 ResultSet 객체 반복
         %>
         <div class = "col-md-4">
             <div class = "card bg-dark text-primary">
@@ -38,10 +38,10 @@
             <h3><%=rs.getString("p_name")%></h3>
             <p><%=rs.getString("p_description")%></p>
             <p><%=rs.getString("p_unitPrice")%>원</p>
-            <p><a href = "product_detail.jsp?id=<%=rs.getString("p_id")%>" class = "btn btn-secondary" role = "button">상품 상세 정보</a>
+            <p><a href = "product_detail.jsp?id=<%=rs.getString("p_id")%>" class = "btn btn-secondary" role = "button">상품 상세 정보 &raquo;</a>
         </div>
         <%
-            } // 반복문이 끝난 후 db 연결 종료
+                } // 반복문이 끝난 후 db 연결 종료
             if(rs != null)
                 rs.close();
             if(pstmt != null)

@@ -36,7 +36,7 @@
                     </div>
                     <div class = "form-group">
                         <label for = "inputPassword" class = "sr-only">Password</label>
-                        <input type = "text" class = "form-control" placeholder = "Password" name = 'j_password' required>
+                        <input type = "password" class = "form-control" placeholder = "Password" name = 'j_password' required>
                     </div>
                     <button class = "btn btn btn-lg btn-success btn-block" type = "submit">
                         로그인
