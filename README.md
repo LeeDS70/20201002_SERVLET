@@ -44,3 +44,6 @@
 ([코드](https://github.com/LeeDS70/20201002_SERVLET/blob/main/admin/product_delete.jsp))
 ([이미지1](https://github.com/LeeDS70/20201002_SERVLET/blob/main/report_screenshot/Week_13_practice_1.png)/[이미지2](https://github.com/LeeDS70/20201002_SERVLET/blob/main/report_screenshot/Week_13_practice_2.png))
 
+### 14주차 완료
+### 14주차 연습문제
+회원가입([코드1](https://github.com/LeeDS70/20201002_SERVLET/blob/main/member/member_join.jsp)/[코드2](https://github.com/LeeDS70/20201002_SERVLET/blob/main/member/member_join_process.jsp)/[이미지](https://github.com/LeeDS70/20201002_SERVLET/blob/main/report_screenshot/Week_14_practice_1.png))
