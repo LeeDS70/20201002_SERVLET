@@ -4,7 +4,7 @@
 ([코드1](https://github.com/LeeDS70/20201002_SERVLET/blob/main/footer.jsp)/[코드2](https://github.com/LeeDS70/20201002_SERVLET/blob/main/WEB-INF/src/example/ShopTime.java))
 ([이미지](https://github.com/LeeDS70/20201002_SERVLET/blob/main/report_screenshot/Week_3_practice.png))
 
-# 3주차 변형
+# 3주차 변형(시간동기화 - 서울)
 ([코드](https://github.com/LeeDS70/20201002_SERVLET/blob/main/footer.jsp))
 ([이미지](https://github.com/LeeDS70/20201002_SERVLET/blob/main/report_screenshot/Week_3_personal.png))
 
