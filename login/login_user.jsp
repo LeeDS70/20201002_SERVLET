@@ -1,4 +1,5 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
+<%@ include file = "../db/db_conn.jsp" %>
 <html>
     <head>
         <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -6,13 +7,14 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <title>로그인</title>
     </head>
     <body>
         <jsp:include page = "../top_menu.jsp" />
         <div class = "jumbotron">
              <div class = "container">
                  <h1 class = "display-3">
-                     관리자 페이지 접근 확인 - 로그인 필요
+                     로그인
                  </h1>
             </div>
         </div>
@@ -29,17 +31,20 @@
 					    out.println("</div>");
                     }
                 %>
-                <form class = "form-signin" action = "j_security_check" method = "post">
+                <form class = "form-signin" action = "../login/login_user_process.jsp" method = "post">
                     <div class = "form-group">
                         <label for = "inputUserName" class = "sr-only">User name</label>
-                        <input type = "text" class = "form-control" placeholder = "ID" name = 'j_username' required autofocus>
+                        <input type = "text" class = "form-control" placeholder = "ID" name = "id" required autofocus>
                     </div>
                     <div class = "form-group">
                         <label for = "inputPassword" class = "sr-only">Password</label>
-                        <input type = "password" class = "form-control" placeholder = "Password" name = 'j_password' required>
+                        <input type = "password" class = "form-control" placeholder = "Password" name = "password"  required>
                     </div>
                     <button class = "btn btn btn-lg btn-success btn-block" type = "submit">
                         로그인
+                    </button>
+                    <button class = "btn btn btn-lg btn-success btn-block" type = "button" onclick = "location.href = '../member/member_join.jsp'">
+                        회원가입
                     </button>
                 </form>
             </div>

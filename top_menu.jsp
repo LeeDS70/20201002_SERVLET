@@ -16,10 +16,11 @@
     <div class = "container" style = "margin:0px">
         <div class = "navbar-header">
             <a class = "navbar-brand" href = "../index.jsp">홈페이지</a>
-            <a class = "navbar-brand" href = "#">로그인</a>
-            <a class = "navbar-brand" href = "#">회원가입</a>
+            <a class = "navbar-brand" href = "../login/login_user.jsp">로그인</a>
+            <a class = "navbar-brand" href = "../member/member_join.jsp">회원가입</a>
+            <a class = "navbar-brand" href = "/BoardListAction.do?pageNum=1">게시판</a>
             <a class = "navbar-brand" href = "#">고객센터</a>
-            <a class = "navbar-brand" href = "admin/index_ad.jsp">관리자모드</a>
+            <a class = "navbar-brand" href = "../admin/index_ad.jsp">관리자모드</a>
         </div>
     </div>
 </nav>
